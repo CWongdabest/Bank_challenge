@@ -14,6 +14,11 @@ class Bankstatement
     end
   end
 
+  def print
+    puts header
+    format_transactions.each {|transaction| puts transaction}
+  end
+
 private
 
   def credit?(transaction)

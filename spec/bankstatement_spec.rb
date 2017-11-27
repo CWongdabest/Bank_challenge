@@ -1,4 +1,6 @@
 require 'bankstatement'
+require 'stringio'
+
 
 describe Bankstatement do
 
@@ -19,6 +21,7 @@ describe Bankstatement do
     it 'formats transactions' do
       expect(bankstatement.format_transactions).to eq ['1/10/2017 || 30.00 ||  || 30.00', '1/10/2017 ||  || 30.00 || 0.00']
     end
+
 
 
 
