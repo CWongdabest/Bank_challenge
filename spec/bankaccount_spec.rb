@@ -23,12 +23,19 @@ describe Bankaccount do
     end
   end
 
-  context 'withdrawals' do
+  context 'multiple transactions' do
+    bankaccount = Bankaccount.new
+
+    before (:each) do
+      bankaccount.deposit(30)
+      bankaccount.withdrawal(30)
+    end
+
     it 'records a withdrawal' do
-        bankaccount = Bankaccount.new
-        bankaccount.deposit(30)
-        bankaccount.withdrawal(30)
         expect(bankaccount.transactions).to eq ([{date: Date.today.to_s, credit: 30, debit: nil, balance: 30}, {date: Date.today.to_s, credit: nil, debit: 30, balance: 0}])
+    end
+
+    it 'prints bank account' do
     end
   end
 

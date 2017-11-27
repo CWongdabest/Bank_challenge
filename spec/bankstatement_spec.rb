@@ -4,15 +4,8 @@ require 'stringio'
 
 describe Bankstatement do
 
-  class FakeBankaccount
-    def transactions
-      [{date: '1/10/2017', credit: 30, debit: nil, balance: 30}, {date: '1/10/2017', credit: nil, debit: 30, balance: 0}]
-    end
-  end
 
-  fakebankaccount = FakeBankaccount.new
-
-  bankstatement = Bankstatement.new(fakebankaccount.transactions)
+  bankstatement = Bankstatement.new([{date: '1/10/2017', credit: 30, debit: nil, balance: 30}, {date: '1/10/2017', credit: nil, debit: 30, balance: 0}])
 
     it 'has a header' do
       expect(bankstatement.header).to eq 'date || credit || debit || balance'
