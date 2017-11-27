@@ -13,9 +13,9 @@ attr_reader :balance
     @transactions
   end
 
-  def add_transaction(date, transaction)
-    @balance += transaction
-    @transactions.push([date, transaction, @balance])
+  def add_deposits(date, deposits)
+    @balance += deposits
+    @transactions.push([date, deposits, @balance])
   end
 
 

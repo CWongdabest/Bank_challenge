@@ -13,9 +13,9 @@ describe Bankaccount do
     expect(bankaccount.transactions.count).to eq 0
   end
 
-  it 'records individual transaction' do
+  it 'records a credit transaction' do
       bankaccount = Bankaccount.new
-      bankaccount.add_transaction('1/10/2017', 30)
+      bankaccount.add_deposits('1/10/2017', 30)
       expect(bankaccount.transactions).to eq ([['1/10/2017', 30, 30]])
   end
 
