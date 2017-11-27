@@ -18,6 +18,11 @@ attr_reader :balance
     @transactions.push([date, deposits, @balance])
   end
 
+  def take_withdrawal(date, withdrawal)
+    @balance -= withdrawal
+    @transactions.push([date, -(withdrawal), @balance])
+  end
+
 
 
 
