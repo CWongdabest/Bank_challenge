@@ -10,8 +10,11 @@ class Bankstatement
 
   def format_transactions
     @transactions.map do |transaction|
-      if transaction[1]  
-        transaction[0] + '||' +
+      if transaction[:credit] != nil
+        "#{transaction[:date]} || #{ sprintf('%.2f', transaction[:credit])} ||  || #{sprintf('%.2f', transaction[:balance])}"
+      else
+        "#{transaction[:date]} ||  || #{ sprintf('%.2f', transaction[:debit])} || #{sprintf('%.2f', transaction[:balance])}"
+      end
     end
   end
 
