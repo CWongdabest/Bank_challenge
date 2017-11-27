@@ -2,11 +2,13 @@ class Bankaccount
 
 DEFAULT_BALANCE = 0
 
-attr_reader :balance
+attr_reader :balance, :transactions 
 
   def initialize
-    @balance = DEFAULT_BALANCE 
+    @balance = DEFAULT_BALANCE
+    @transactions = []
   end
+
 
 
 
