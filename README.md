@@ -22,3 +22,17 @@ As a bank,
 So that my staff can keep track of customer transactions,
 I would like to save the data of customer transactions.   
 ```
+
+To use the application:
+
+Creating a bank account -
+bankaccount = Bankaccount.new
+
+Depositing money
+bankaccount.deposit(amount you wish to deposit)
+
+Withdrawing money
+bankaccount.withdrawal(amount you wish to withdraw)
+
+Printing statement 
+bankaccount.print_statement
