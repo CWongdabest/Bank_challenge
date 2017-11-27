@@ -23,7 +23,7 @@ I would like to save the data of customer transactions.
 
 To use the application:
 
-## Creating a bank account -
+## Creating a bank account
 bankaccount = Bankaccount.new
 
 ## Depositing money
@@ -34,3 +34,14 @@ bankaccount.withdrawal(amount you wish to withdraw)
 
 ## Printing statement
 bankaccount.print_statement
+
+
+## to run tests:
+
+Unit tests:
+First run 'bundle install'
+Then run 'rspec'
+
+Feature test:
+Run irb
+require './spec/feature_spec.rb'
