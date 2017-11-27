@@ -15,13 +15,13 @@ attr_reader :balance
     @transactions
   end
 
-  def add_deposits(deposits)
+  def deposit(deposits)
     @balance += deposits
     deposit_transaction = {date: Date.today.to_s, credit: deposits, debit: nil, balance: @balance}
     @transactions.push(deposit_transaction)
   end
 
-  def take_withdrawal(withdrawal)
+  def withdrawal(withdrawal)
     @balance -= withdrawal
     withdrawal_transaction = {date: Date.today.to_s, credit: nil, debit: withdrawal, balance: @balance}
     @transactions.push(withdrawal_transaction)

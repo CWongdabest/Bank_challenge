@@ -18,7 +18,7 @@ describe Bankaccount do
   context 'deposits' do
     it 'records a deposit' do
         bankaccount = Bankaccount.new
-        bankaccount.add_deposits(30)
+        bankaccount.deposit(30)
         expect(bankaccount.transactions).to eq ([{date: Date.today.to_s, credit: 30, debit: nil, balance: 30}])
     end
   end
@@ -26,8 +26,8 @@ describe Bankaccount do
   context 'withdrawals' do
     it 'records a withdrawal' do
         bankaccount = Bankaccount.new
-        bankaccount.add_deposits(30.00)
-        bankaccount.take_withdrawal(30.00)
+        bankaccount.deposit(30)
+        bankaccount.withdrawal(30)
         expect(bankaccount.transactions).to eq ([{date: Date.today.to_s, credit: 30, debit: nil, balance: 30}, {date: Date.today.to_s, credit: nil, debit: 30, balance: 0}])
     end
   end
