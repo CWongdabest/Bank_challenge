@@ -1,3 +1,5 @@
+require 'date'
+
 class Bankaccount
 
 DEFAULT_BALANCE = 0
@@ -13,14 +15,16 @@ attr_reader :balance
     @transactions
   end
 
-  def add_deposits(date, deposits)
+  def add_deposits(deposits)
     @balance += deposits
-    @transactions.push([date, deposits, @balance])
+    deposit_transaction = {date: Date.today.to_s, credit: deposits, debit: nil, balance: @balance}
+    @transactions.push(deposit_transaction)
   end
 
-  def take_withdrawal(date, withdrawal)
+  def take_withdrawal(withdrawal)
     @balance -= withdrawal
-    @transactions.push([date, -(withdrawal), @balance])
+    withdrawal_transaction = {date: Date.today.to_s, credit: nil, debit: withdrawal, balance: @balance}
+    @transactions.push(withdrawal_transaction)
   end
 
 end
