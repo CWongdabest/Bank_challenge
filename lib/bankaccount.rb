@@ -23,9 +23,4 @@ attr_reader :balance
     @transactions.push([date, -(withdrawal), @balance])
   end
 
-
-
-
-
-
 end

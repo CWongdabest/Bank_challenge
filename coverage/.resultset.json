@@ -65,14 +65,49 @@
         1,
         null,
         null,
+        null
+      ],
+      "/Users/cwong/Documents/Bank_challenge/spec/bankstatement_spec.rb": [
+        1,
         null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
         null,
         null,
         null,
         null,
         null
+      ],
+      "/Users/cwong/Documents/Bank_challenge/lib/bankstatement.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/cwong/Documents/Bank_challenge/spec/customer_spec.rb": [
+
       ]
     },
-    "timestamp": 1511786603
+    "timestamp": 1511790422
   }
 }
