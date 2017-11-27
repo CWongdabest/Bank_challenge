@@ -1,0 +1,35 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/cwong/Documents/Bank_challenge/spec/bankaccount_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/cwong/Documents/Bank_challenge/lib/bankaccount.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1511784588
+  }
+}
