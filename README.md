@@ -1,6 +1,4 @@
-#Bank_challenge
-
-User stories for bank challenge:
+##User stories for bank challenge:
 ```
 As a customer,
 So that I can transfer money,
@@ -25,14 +23,14 @@ I would like to save the data of customer transactions.
 
 To use the application:
 
-Creating a bank account -
+##Creating a bank account -
 bankaccount = Bankaccount.new
 
-Depositing money
+##Depositing money
 bankaccount.deposit(amount you wish to deposit)
 
-Withdrawing money
+##Withdrawing money
 bankaccount.withdrawal(amount you wish to withdraw)
 
-Printing statement 
+##Printing statement
 bankaccount.print_statement
